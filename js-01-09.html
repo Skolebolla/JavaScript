@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 9</title>
+</head>
+<body>
+    <h1>Oppg. 9: Quiz om breaking bad</h1>
+    <script>
+        let svar = prompt('Spørsmål 1: Hva heter hovedkarakteren i Breaking Bad?')
+        let poeng = 0
+        if(svar.toLowerCase === 'Walter White'.toLowerCase) {
+            poeng += 2
+            let svar = prompt('Riktig svar! Spørsmål 2: Hvem jobber han med?')
+            }
+        else {
+            let svar = prompt('Feil svar... Spørsmål 2: Hvem jobber han med?')
+            }
+        if(svar.toLowerCase === 'Jesse Pinkman'.toLowerCase) {
+            poeng += 2
+            let svar = prompt('Riktig svar! Spørsmål 3: Hvilken by befinner de seg i?')
+            }
+        else {
+            let svar = prompt('Feil svar... Spørsmål 3: Hvilken by befinner de seg i?')
+            }
+        if(svar.toLowerCase === 'Albuquerque'.toLowerCase) {
+            poeng += 2
+            let svar = prompt('Riktig svar! Spørsmål 4: Hva heter fast food-restauranten eid av Gustavo Fring?')
+            }
+        else {
+            let svar = prompt('Feil svar... Spørsmål 4: Hva heter fast food-restauranten eid av Gustavo Fring?')
+            }
+        if(svar.toLowerCase === 'Los Pollos Hermanos'.toLowerCase) {
+            poeng += 2
+            let svar = prompt('Riktig svar! Spørsmål 5: Hva jobber Saul Goodman som?')
+            }
+        else {
+            let svar = prompt('Feil svar... Spørsmål 5: Hva jobber Saul Goodman som?')
+            }
+        if(svar.toLowerCase === 'Advokat'.toLowerCase) {
+            poeng += 2
+            alert('Riktig svar! Du fikk ' + poeng + '/10' + 'riktige.')
+            }
+        else {
+            alert('Feil svar... Du fikk ' + poeng + '/10' + ' riktige.')
+            }
+    </script>
+</body>
+</html>

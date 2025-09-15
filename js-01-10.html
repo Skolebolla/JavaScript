@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Oppgave 10</title>
+    </head>
+    <body>
+        <h1>Tabell over tallene fra 1 til 1000</h1>
+        <script>
+            document.write( ` <table> <thead> <tr> <th>Tall</th> <th>Kvadrat</th> <th>Kubikk</th> </tr> </thead> <tbody> ` );
+            for (let i = 1; i <= 1000; i++){
+                document.write( ` <tr> <td>${i}</td> <td>${i ** 2}</td> <td>${i ** 3}</td> </tr> ` );
+                }
+            document.write( ` </tbody> </table>` );
+        </script>
+    </body>
+</html>

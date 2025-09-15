@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 7</title>
+</head>
+<body>
+    <h1>Oppg. 7: Sum av tall delelig med 3 mellom 0 og 100</h1>
+    <script>
+        let sum = 0;
+        for (let i = 0; i < 100; i ++) {
+            if(i % 3 === 0){
+            sum += i;
+            }
+        }
+        document.write('Summen av alle tall mellom 0 og 100 som er delelig med 3 er ' + sum + '.')
+    </script>
+</body>
+</html>
