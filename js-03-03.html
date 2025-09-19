@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 3</title>
+</head>
+<body>
+    <h1>Oppg. 3: 5 knapper</h1>
+    <script>
+        const riktigKnapp = Math.floor( Math.random() * 5 + 1 )
+        let valgtKnapp = 0
+        function sjekkSvar(){
+            if (valgtKnapp === riktigKnapp)
+                alert('Riktig!')
+            else
+                alert('Feil - prøv igjen')
+        }
+    </script>
+    <button id="1" onclick=" valgtKnapp = 1, sjekkSvar()">Klikk meg</button>
+    <button id="2" onclick=" valgtKnapp = 2, sjekkSvar()">Klikk meg</button>
+    <button id="3" onclick=" valgtKnapp = 3, sjekkSvar()">Klikk meg</button>
+    <button id="4" onclick=" valgtKnapp = 4, sjekkSvar()">Klikk meg</button>
+    <button id="5" onclick=" valgtKnapp = 5, sjekkSvar()">Klikk meg</button>
+</body>
+</html>
