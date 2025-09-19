@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 5</title>
+</head>
+<body>
+    <h1>Oppg. 5: </h1>
+    <p id="personinfo"></p>
+    <script>
+        const dato = new Date();
+        const år = dato.getFullYear();
+
+        function personinfo(navn, alder){
+            return `Hei, ${navn.toUpperCase()}! Du er født i ${new Date().getFullYear()-alder}.`
+        }
+        document.getElementById('personinfo').innerHTML=personinfo('Mattias', 17)
+    </script>
+</body>
+</html>

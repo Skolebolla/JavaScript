@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 4</title>
+</head>
+<body>
+    <h1>Oppg. 4: Tabell-funksjon</h1>
+    <script>
+        function tabellRad(fulltNavn, alder){
+            return `
+                <tr>
+                    <td>${fulltNavn}</td>
+                    <td>${alder}</td>
+                </tr>
+            `
+        }
+        document.write(`
+            <table>
+                <tr>
+                    <th>Fullt Navn</th>
+                    <th>Alder</th>
+                </tr>
+                ${tabellRad('Mattias Bjørdal Kristiansen', 17)}
+                ${tabellRad('Jonas Gahr Støre', 65)}
+                ${tabellRad('Joe Biden', 82)}
+            </table>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 5</title>
+</head>
+<body>
+    <h1>Oppg. 5: Sum & produkt av alle oddetall fra 1 til 99</h1>
+    <script>
+        let oddetall = []
+        for (let i = 1; i < 100; i += 2) {
+            oddetall.push(i)
+        }
+
+        let sum = 0;
+        for (let n of oddetall)
+            sum += n
+
+        let produkt = 1n
+        for (let n of oddetall)
+            produkt *= BigInt(n)
+
+        document.write(`
+            Sum: ${sum}<br>
+            Produkt: ${produkt}
+        `)
+    </script>
+</body>
+</html>
